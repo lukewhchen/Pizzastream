@@ -1,9 +1,22 @@
-html, body, img, p, div, h1, h2, h3, h4, h5, h6 {
-  font-family: "Avenir Next";
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  color: #565554;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 :root {
@@ -14,6 +27,17 @@ html, body, img, p, div, h1, h2, h3, h4, h5, h6 {
 
 html {
   background-color: #F2F2F2;
+}
+
+body {
+  font-family: "Avenir Next";
+  text-align: center;
+}
+
+img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .f20 {
@@ -29,10 +53,26 @@ html {
   font-size: 50px;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   margin: auto;
   width: 1440px;
   height: 1024px;
+  color: #565554;
+  background-color: #FFFFFF;
 }
 
 .bg {
@@ -71,54 +111,18 @@ html {
   height: 150px;
 }
 
-.body {
+.info {
   height: 200px;
-  background-color: #FFFFFF;
 }
 
-h1 {
-  margin-top: 10px;
+.info h1 {
   font-weight: 500;
+  line-height: 47px;
+  margin-bottom: 15px;
 }
 
-.body p:nth-child(2) {
-  margin-top: 15px;
-}
-
-.loading {
-  background-image: url("./assets/loading.gif");
-  background-size: cover;
-  background-color: black;
-  background-repeat: no-repeat;
-  height: 51px;
-}
-
-.footer {
-  height: 155px;
-  background-color: #FFFFFF;
-}
-
-.footer p:first-child {
-  margin-top: 10px;
-  font-weight: 400;
-}
-
-.footer p:nth-child(2) {
-  font-weight: 500;
-}
-
-.flex-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.info p {
+  line-height: 35px;
 }
 
 .step {
@@ -126,7 +130,6 @@ h1 {
   height: 469px;
   font-size: 20px;
   color: rgba(86, 85, 84, 0.5);
-  background-color: #FFFFFF;
 }
 
 .step:nth-child(2) {
@@ -163,11 +166,8 @@ h1 {
   border-radius: 4px;
 }
 
-img {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
+/* apply different class .processing and .done
+to represent the status change*/
 
 .processing > p:first-child {
   background-color: #2E86AB;
@@ -197,4 +197,24 @@ img {
 .done > p:last-child {
   mix-blend-mode: normal;
   opacity: 0.5;
+}
+
+.loading {
+  background-image: url("./assets/loading.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 51px;
+}
+
+.footer {
+  height: 155px;
+}
+
+.footer p:first-child {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.footer p:nth-child(2) {
+  font-weight: 500;
 }
