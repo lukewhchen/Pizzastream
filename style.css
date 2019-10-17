@@ -56,15 +56,12 @@ img {
 .flex-col {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
 .flex-row {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
 .container {
@@ -129,7 +126,6 @@ img {
   flex-grow: 1;
   height: 469px;
   font-size: 20px;
-  color: rgba(86, 85, 84, 0.5);
 }
 
 .step:nth-child(2) {
@@ -147,10 +143,8 @@ img {
 }
 
 .step p:nth-child(2) {
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin: 24px 0px;
   font-weight: 500;
-  color: rgba(86, 85, 84, 1);
 }
 
 .step p:last-child {
@@ -164,39 +158,6 @@ img {
   margin: auto;
   background-color: #EBEBEB;
   border-radius: 4px;
-}
-
-/* apply different class .processing and .done
-to represent the status change*/
-
-.processing > p:first-child {
-  background-color: #2E86AB;
-}
-
-.processing .icon {
-  background-color: #2E86AB;
-  opacity: 1;
-}
-
-.processing > p:last-child {
-  opacity: 1;
-}
-
-.done > p:first-child {
-  background-color: #2E86AB;
-  mix-blend-mode: normal;
-  opacity: 0.6;
-}
-
-.done .icon {
-  background-color: #2E86AB;
-  mix-blend-mode: normal;
-  opacity: 0.6;
-}
-
-.done > p:last-child {
-  mix-blend-mode: normal;
-  opacity: 0.5;
 }
 
 .loading {
@@ -217,4 +178,26 @@ to represent the status change*/
 
 .footer p:nth-child(2) {
   font-weight: 500;
+}
+
+/* apply different class .processing and .done
+to represent the status change */
+
+.processing p:first-child, .processing .icon{
+  background-color: #2E86AB;
+}
+
+.processing p:last-child  {
+  opacity: 1;
+}
+
+.done p:first-child, .done .icon {
+  background-color: #2E86AB;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+.done p:last-child {
+  mix-blend-mode: normal;
+  opacity: 0.5;
 }
