@@ -201,3 +201,10 @@ to represent the status change */
   mix-blend-mode: normal;
   opacity: 0.5;
 }
+
+/*  */
+.context {
+	background-color: #2E86AB;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
