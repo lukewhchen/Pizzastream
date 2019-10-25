@@ -208,3 +208,7 @@ to represent the status change */
   mix-blend-mode: normal;
   opacity: 0.6;
 }
+.context p {
+	margin: auto;
+	color: #FFFFFF;
+}
