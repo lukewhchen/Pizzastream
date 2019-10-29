@@ -214,5 +214,9 @@ to represent the status change */
 }
 
 /* .order {
-	background-image: image();
+  background-image: var(--bg);
+	background-color: #F6F5AE;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
 } */
