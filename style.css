@@ -226,3 +226,8 @@ to represent the status change */
 	mix-blend-mode: normal;
 	opacity: 0.6;
 } */
+
+/* .order p:last-child {
+  mix-blend-mode: normal;
+  opacity: 0.5;
+} */
