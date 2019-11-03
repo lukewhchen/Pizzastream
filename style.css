@@ -231,3 +231,17 @@ to represent the status change */
   mix-blend-mode: normal;
   opacity: 0.5;
 } */
+
+/* .background-image {
+  height: 1024px;
+  width: 240px;
+  background-color: #DA593F;
+  background-image:
+  var(--bg), var(--bg), var(--bg), var(--bg),
+  var(--bg), var(--bg), var(--bg), var(--bg);
+  background-position:
+  var(--left) 5%, var(--left) 30%, var(--left) 55%, var(--left) 79%,
+  var(--right) 18%, var(--right) 42%, var(--right) 67%, var(--right) 92%;
+  background-repeat: no-repeat, no-repeat;
+  mix-blend-mode: normal;
+} */
